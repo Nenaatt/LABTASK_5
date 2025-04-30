@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JTMK Mobile Web</title>
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+  
+  <!-- jQuery and jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+  }
+  .hero {
+    background: #0a3d62; /* Biru gelap */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .card {
+    border: 1px solid #dcdde1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.05);
+  }
+  .profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #1e90ff;
+  display: block;
+  margin: 0 auto;
+}
+
+  .social-sidebar {
+    position: fixed;
+    top: 70%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
+  .social-sidebar a img {
+    width: 35px;
+    height: 35px;
+  }
+  .header-logo {
+    height: 100px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  [data-role="header"] {
+    background: white;
+    color: #0a3d62;
+    border-bottom: 2px solid #1e90ff;
+  }
+  [data-role="footer"] {
+    background: white;
+    color: #0a3d62;
+    border-top: 2px solid #1e90ff;
+  }
+  .ui-btn {
+    background: #1e90ff !important;
+    color: white !important;
+    border: none;
+  }
+  .ui-btn-active {
+    background: #0a3d62 !important;
+    color: white !important;
+    border: none;
+  }
+  .project-img {
+    width: 50%; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 12px; 
+  }
+</style>
+
+
+</head>
+
+<body>
+
+<!-- Floating Social Sidebar -->
+<div class="social-sidebar">
+  <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+  <a href="#"><img src="github.png" alt="GitHub"></a>
+  <a href="#"><img src="twitter.png" alt="Twitter"></a>
+  <a href="#"><img src="youtube.png" alt="YouTube"></a>
+  <a href="#"><img src="instagram.jpg" alt="Instagram"></a>
+</div>
+
+<!-- HOME Page -->
+<div data-role="page" id="home">
+  <div data-role="header" data-position="fixed">
+    <img src="logo.jpg" class="header-logo" alt="Logo"> JABATAN TEKNOLOGI MAKLUMAT DAN KOMUNIKASI
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" class="ui-btn-active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>HEY, MY NAME IS JTMK</h1>
+    <p>"JTMK is the Department of Information and Communication Technology (JTMK) offering DDT courses (Diploma in Information Technology (Digital Technology)) at Seberang Perai Polytechnic (PSP)."</p>
+    <a href="#projects" data-role="button" data-theme="b">Explore Projects</a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright © DDT4A S2 2024/2025. All rights reserved.</h4>
+  </div>
+</div>
+
+<!-- ABOUT Page -->
+<div data-role="page" id="about">
+  <div data-role="header" data-position="fixed">
+    <h1>About Us</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about" class="ui-btn-active">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content">
+    <div class="ui-grid-a">
+      <div class="ui-block-a">
+        <div class="card">
+          <img src="member1.jpg" class="profile-img" alt="Member 1">
+          <h3>MS.INTAN NUR QISTINA BINTI MOHAMAD SOFI</h3>
+          <p>HEAD OF DEAPARTMENT<br>📞 +601135619291</p>
+        </div>
+      </div>
+      <div class="ui-block-b">
+        <div class="card">
+          <img src="member2.jpg" class="profile-img" alt="Member 2">
+          <h3>MS.HURUL AIN BINTI ADAM</h3>
+          <p>PROGRAM HEAD (SOFTWARE TRACK)<br>📞 +60148746135</p>
+        </div>
+      </div>
+      <div class="ui-block-a">
+        <div class="card">
+          <img src="member3.jpg" class="profile-img" alt="Member 3">
+          <h3>MS.FITRIAH NADIRAH BINTI OTHMAN</h3>
+          <p>PROGRAM HEAD (NETWORK TRACK)<br>📞 +60108981561</p>
+        </div>
+      </div>
+      <div class="ui-block-b">
+        <div class="card">
+          <img src="member4.png" class="profile-img" alt="Member 4">
+          <h3>MS. SARAH </h3>
+          <p>PROGRAM HEAD (DATA TRACK)<br>📞 +60122334455</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright © DDT4A S2 2024/2025. All rights reserved.</h4>
+  </div>
+</div>
+
+<!-- PROJECTS Page -->
+<div data-role="page" id="projects">
+  <div data-role="header" data-position="fixed">
+    <h1>Our Projects</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects" class="ui-btn-active">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content">
+    <div class="card">
+      <img src="project1.jpg" alt="Project 1" class="project-img">
+      <h3>PROJECT ROBOTIC WITH RASPBERRY PI </h3>
+      <a href="project1.pdf" target="_blank" data-role="button" data-icon="grid">View Report</a>
+    </div>
+  </div> <!-- Ini penting: tutup content -->
+  
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright © DDT4A S2 2024/2025. All rights reserved.</h4>
+  </div>
+</div>
+
+
+<!-- CONTACT Page -->
+<div data-role="page" id="contact">
+  <div data-role="header" data-position="fixed">
+    <h1>Contact Us</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content">
+    <a href="tel:+60108981561" data-role="button" data-icon="phone">Call Us</a>
+    <a href="mailto:10DDT23F1004@student.psp.edu.my" data-role="button" data-icon="mail">Email Us</a>
+    <a href="https://wa.me/60108981561" target="_blank" data-role="button" data-icon="comment">WhatsApp Us</a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright © DDT4A S2 2024/2025. All rights reserved.</h4>
+  </div>
+</div>
+
+</body>
+</html>
